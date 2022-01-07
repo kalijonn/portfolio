@@ -1,14 +1,7 @@
 module.exports = {
-  purge: ['src/**/*.tsx', './public/*.html'],
-  darkMode: 'class',
+  content: ['src/**/*.tsx', './public/*.html'],
   theme: {
-    extend: {
-      transitionProperty: {
-        'width-font': 'width, font-size',
-      },
-      inset: {
-        18: '4.5rem',
-      },
-    },
+    extend: {},
   },
+  plugins: [],
 }
