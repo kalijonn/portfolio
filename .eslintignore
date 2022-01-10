@@ -2,3 +2,4 @@ node_modules
 build
 webpack.*.js
 *.config.js
+jest.*.js

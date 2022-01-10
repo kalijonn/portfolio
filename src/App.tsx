@@ -1,5 +1,6 @@
-import React, {FC} from 'react'
+import Landing from './Pages/Landing'
+import React from 'react'
 
-export const App: FC = () => {
-  return <h1 className="bg-gray-300">Hello World!</h1>
+export default function App() {
+  return <Landing />
 }
