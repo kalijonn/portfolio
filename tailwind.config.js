@@ -1,7 +1,12 @@
 module.exports = {
   content: ['src/**/*.tsx', './public/*.html'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        garamond: ['EB Garamond'],
+        bodoni: ['Bodoni Moda'],
+      },
+    },
   },
   plugins: [],
 }
