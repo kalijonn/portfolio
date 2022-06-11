@@ -10,10 +10,10 @@ export default function Landing() {
       <div className="flex flex-col md:font-bodoni font-serif md:w-1/2 justify-center z-10">
         <motion.h1
           className="font-bold md:text-5xl text-4xl my-10 md:leading-none leading-relaxed p-1"
-          animate={{x: 0, y: 0, opacity: [0, 0, 0, 0, 1]}}
-          initial={{x: '100vw', y: 0, opacity: 0}}
+          animate={{x: '0vw', opacity: [0, 0, 0, 0, 1]}}
+          initial={{x: '100vw', opacity: 0}}
           transition={{default: {duration: 1}}}
-          exit={{x: '100vw', y: 0, opacity: [1, 0, 0, 0, 0]}}
+          exit={{x: '100vw', opacity: [1, 0, 0, 0, 0]}}
         >
           <motion.span
             animate={{
@@ -47,18 +47,18 @@ export default function Landing() {
         </motion.h1>
         <motion.p
           className="font-sans"
-          animate={{x: 0, y: 0, opacity: [0, 0, 0, 0, 1]}}
-          initial={{x: '100vw', y: 0, opacity: 0}}
+          animate={{x: '0vw', opacity: [0, 0, 0, 0, 1]}}
+          initial={{x: '100vw', opacity: 0}}
           transition={{default: {duration: 1}}}
-          exit={{x: '100vw', y: 0, opacity: [1, 0, 0, 0, 0]}}
+          exit={{x: '100vw', opacity: [1, 0, 0, 0, 0]}}
         >
           And maybe Javascript.
         </motion.p>
         <motion.div
-          animate={{x: 0, y: 0, opacity: [0, 0, 0, 0, 1]}}
-          initial={{x: '100vw', y: 0, opacity: 0}}
+          animate={{x: '0vw', opacity: [0, 0, 0, 0, 1]}}
+          initial={{x: '100vw', opacity: 0}}
           transition={{default: {duration: 1}}}
-          exit={{x: '100vw', y: 0, opacity: [1, 0, 0, 0, 0]}}
+          exit={{x: '100vw', opacity: [1, 0, 0, 0, 0]}}
         >
           <button
             className="py-2 px-3 my-5 mr-5 text-lg  bg-cyan-500 text-white font-semibold rounded-md shadow-lg shadow-cyan-500/50 focus:outline-none font-sans"
@@ -78,10 +78,10 @@ export default function Landing() {
           src={kalijonnImage}
           alt="Kali's headshot"
           className="object-cover rounded-lg overflow-hidden h-1/6 w-1/6 border-0 md:w-full md:h-full mx-auto max-w-full"
-          animate={{x: 0, opacity: [0, 0, 0, 0, 1]}}
-          initial={{x: '-100vw', y: 0, opacity: 0}}
+          animate={{x: '0vw', opacity: [0, 0, 0, 0, 1]}}
+          initial={{x: '-100vw', opacity: 0}}
           transition={{default: {duration: 1}}}
-          exit={{x: '-100vw', y: 0, opacity: [1, 0, 0, 0, 0]}}
+          exit={{x: '-100vw', opacity: [1, 0, 0, 0, 0]}}
         />
       </div>
     </motion.div>
