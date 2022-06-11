@@ -12,5 +12,15 @@ test('landing no violations', async () => {
   )
   const results = await axe(container)
   expect(results).toHaveNoViolations()
-  expect(container).toMatchSnapshot()
+})
+
+test('landing to have correct text', () => {
+  const {getByRole} = render(
+    <MemoryRouter>
+      <Landing />
+    </MemoryRouter>,
+  )
+  expect(getByRole('heading')).toHaveTextContent(
+    "Hi! I'm Kali. I'm passionate about all things Typescript.",
+  )
 })
