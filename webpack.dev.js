@@ -10,6 +10,7 @@ module.exports = merge(common, {
     compress: true,
     port: 8000,
     hot: true,
+    historyApiFallback: true,
   },
   resolve: {
     alias: {
